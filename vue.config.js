@@ -4,6 +4,7 @@ module.exports = defineConfig({
   productionSourceMap: false,
   pages: {
     index: 'src/index/main.js',
-    backend: 'src/backend/main.js'
+    backend: 'src/backend/main.js',
+    frontend: 'src/frontend/main.js'
   }
 })

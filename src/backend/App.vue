@@ -7,9 +7,9 @@
             <!-- <br v-for = 'i in 3' :key = i /> -->
             
             <v-container class = 'align-content-center' min-height = 100vh>
-                <v-card class = 'glass text-center ma-2' title = 選擇你的配料 :subtitle = '`累計金額 ${this.money} USD`'>
+                <v-card class = 'glass text-center ma-2' title = 選擇你的配料>
                     <template v-for = 'i in N' :key = i>
-                        <v-hover v-if = 'checked[i - 1]'>
+                        <v-hover v-if = '!checked[i - 1]'>
                             <template #default = '{isHovering, props}'>
                                 <v-chip :text = 'label[i - 1]' v-ripple class = 'ma-1 pa-3' v-bind = props :color = 'isHovering ? `amber` : undefined' @click = 'this.update_money(i - 1);'/>
                             </template>
@@ -17,9 +17,9 @@
                     </template>
                 </v-card>
 
-                <v-card class = 'glass text-center ma-2' title = 已經選好的配料>
+                <v-card class = 'glass text-center ma-2' title = 已經選好的配料 :subtitle = '`累計金額 ${this.money} USD`'>
                     <template v-for = 'i in N' :key = i>
-                        <v-hover v-if = '!checked[i - 1]'>
+                        <v-hover v-if = 'checked[i - 1]'>
                             <template #default = '{isHovering, props}'>
                                 <v-chip :text = 'label[i - 1]' v-ripple class = 'ma-1 pa-3' v-bind = props :color = 'isHovering ? `amber` : undefined' @click = 'this.update_money(i - 1);'/>
                             </template>
