@@ -85,7 +85,7 @@ export default {
 } */
 
 .slogan {
-    font-size: 50px;
+    font-size: 25px;
     font-family: 'Eras Bold ITC';
     color:rgb(218, 218, 215);
     
@@ -97,7 +97,7 @@ export default {
     position:fixed;
     /* left:10vw;
     top:40vh; */
-    left: 92vw; 
+    left: calc(100vw - 120px); 
     top: calc(100vh - 8vw);
     z-index:1000;
     border-radius: 10px;

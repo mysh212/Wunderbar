@@ -11,7 +11,7 @@
                     <v-col cols = 12>
                         <v-progress-linear :model-value = '100 * this.f.length / this.N' />
                         <v-card id = question>
-                            <template #title>
+                            <template #text>
                                 <b id = question-text> {{ final_quote }} </b>
                             </template>
                         </v-card>
