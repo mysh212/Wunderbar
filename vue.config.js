@@ -5,6 +5,7 @@ module.exports = defineConfig({
   pages: {
     index: 'src/index/main.js',
     backend: 'src/backend/main.js',
-    frontend: 'src/frontend/main.js'
+    frontend: 'src/frontend/main.js',
+    hydrant: 'src/hydrant/main.js'
   }
 })

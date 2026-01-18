@@ -12,7 +12,7 @@
     <v-hover>
         <template #default = '{isHovering, props}'>
             <div class = 'navibar' :class = 'isHovering ? `elevation-3` : `elevation-1`' v-bind = props>
-                <a href = '/'> <b class = navi-title> Wunderbar </b> </a>
+                <a href = '/'> <b class = navi-title> Δ Lawgic </b> </a>
             </div>
         </template>
     </v-hover>

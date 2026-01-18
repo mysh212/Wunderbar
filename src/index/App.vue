@@ -8,6 +8,9 @@
             
             <v-container class = 'align-content-center' min-height = 100vh>
                 <v-row align = center justify = center height = 900px>
+                    <!-- <v-col cols = 12>
+                        <v-img src = 'img/DeltaLogic.png' max-height = 200px style = 'border-radius: 500%;' />
+                    </v-col> -->
                     <v-col cols = 12 md = 6 lg = 4>
                         <v-hover>
                             <template #default = '{isHovering, props}'>
@@ -19,6 +22,13 @@
                         <v-hover>
                             <template #default = '{isHovering, props}'>
                                 <a href = '/backend.html'> <v-card class = text-center prepend-icon = 'fa-solid fa-bag-shopping' v-bind = props :color = 'isHovering ? `teal` : undefined' title = '購買介面' v-ripple /> </a>
+                            </template>
+                        </v-hover>
+                    </v-col>
+                    <v-col cols = 12 md = 6 lg = 4>
+                        <v-hover>
+                            <template #default = '{isHovering, props}'>
+                                <a href = '/hydrant.html'> <v-card class = text-center prepend-icon = 'fa-solid fa-hydrant' v-bind = props :color = 'isHovering ? `pink` : undefined' title = '消防設施填報介面' v-ripple /> </a>
                             </template>
                         </v-hover>
                     </v-col>
