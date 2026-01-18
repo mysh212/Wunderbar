@@ -2,12 +2,13 @@
     <v-app>
         <page_loader :loading = 'loading' />
         <title_nav />
-
+        
         <v-main>
             <!-- <br v-for = 'i in 3' :key = i /> -->
             
+            <v-img class = ai src = '/img/brand.png' />
             <v-container class = 'align-content-center' min-height = 100vh>
-                <v-row align = center justify = center height = 900px>
+                <v-row align = center justify = center>
                     <!-- <v-col cols = 12>
                         <v-img src = 'img/DeltaLogic.png' max-height = 200px style = 'border-radius: 500%;' />
                     </v-col> -->
@@ -33,11 +34,16 @@
                         </v-hover>
                     </v-col>
                 </v-row>
+                
+                <div class = 'slogan text-center'> No more legal tragic, just Lawgic magic. </div>
             </v-container>
         </v-main>
     </v-app>
 
 <site_footer></site_footer>
+
+
+
 </template>
 
 <script>
@@ -77,4 +83,31 @@ export default {
 /* * {
   transition: 1s all;
 } */
+
+.slogan {
+    font-size: 50px;
+    font-family: 'Eras Bold ITC';
+    color:rgb(218, 218, 215);
+    
+}
+
+.ai {
+    width: 6vw;
+    height: 6vw;
+    position:fixed;
+    /* left:10vw;
+    top:40vh; */
+    left: 92vw; 
+    top: calc(100vh - 8vw);
+    z-index:1000;
+    border-radius: 10px;
+}
+
+.ai:hover {
+    width: 12vw;
+    height: 12vw;
+    left: 88vw; 
+    top: calc(100vh - 12vw);
+}
+
 </style>
