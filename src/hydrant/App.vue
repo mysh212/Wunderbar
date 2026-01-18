@@ -7,7 +7,7 @@
             <v-container class = 'align-content-center text-center' min-height = 100vh>
                 <v-card title = 選擇場域種類 class = ma-3>
                     <v-row>
-                        <v-col v-for = 'i, j in pre' :key = i cols = 6 md = 2>
+                        <v-col v-for = 'i, j in pre' :key = i cols = 12 md = 4>
                             <v-card :title = i[0] :color = 'selected == j ? i[1] : undefined' @click = 'select(j)'></v-card>
                         </v-col>
                     </v-row>
@@ -47,7 +47,7 @@ export default {
     data() {
         return {
             loading: true,
-            pre: [['甲', 'teal'], ['乙', 'cyan'], ['丙', 'pink'], ['丁', 'orange'], ['戊', 'purple'], ['己', 'brown']],
+            pre: [['甲(高風險、高密集度)', 'teal'], ['乙 (一般民生與公共場所)', 'cyan'], ['丙(工廠、工作場、屠宰場)', 'pink'], ['丁(倉庫、露天堆置場)', 'orange'], ['戊(停車場、飛機庫)', 'purple'], ['己(殯儀館、電信機器室、其他不具名場所)', 'brown']],
             selected: 0,
             f: [],
             rules: {
