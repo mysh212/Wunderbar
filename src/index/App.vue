@@ -28,7 +28,7 @@
                     <v-col cols = 12 md = 6 lg = 4>
                         <v-hover>
                             <template #default = '{isHovering, props}'>
-                                <a href = '/hydrant.html'> <v-card class = text-center prepend-icon = 'fa-solid fa-hydrant' v-bind = props :color = 'isHovering ? `pink` : undefined' title = '消防設施填報介面' v-ripple /> </a>
+                                <a href = '/hydrant.html'> <v-card class = text-center prepend-icon = 'fa-solid fa-fire' v-bind = props :color = 'isHovering ? `pink` : undefined' title = '消防設施填報介面' v-ripple /> </a>
                             </template>
                         </v-hover>
                     </v-col>
